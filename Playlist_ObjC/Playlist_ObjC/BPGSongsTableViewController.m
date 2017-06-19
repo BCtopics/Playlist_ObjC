@@ -28,6 +28,8 @@
 - (IBAction)addSongButtonTapped:(id)sender {
     
     [[BPGPlaylistController sharedInstance] addSongWithTitle:self.titleTextField.text andArtist:self.artistTextField.text toPlaylist:self.playlist];
+    self.titleTextField.text = @"";
+    self.artistTextField.text = @"";
     [self.tableView reloadData];
 }
 

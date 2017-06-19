@@ -16,14 +16,17 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *playlistNameTextField;
 
-
-
 @end
 
 @implementation BPGPlaylistTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - IBActions
