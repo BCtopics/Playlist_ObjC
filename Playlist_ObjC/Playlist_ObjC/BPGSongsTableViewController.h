@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BPGPlaylist.h"
 
 @interface BPGSongsTableViewController : UITableViewController
+
+@property (nonatomic, strong) BPGPlaylist *playlist;
 
 @end
