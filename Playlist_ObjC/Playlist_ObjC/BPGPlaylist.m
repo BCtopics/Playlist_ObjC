@@ -8,17 +8,38 @@
 
 #import "BPGPlaylist.h"
 
+@interface BPGPlaylist()
+
+@property (nonatomic, strong) NSMutableArray *internalSongs;
+
+@end
+
 @implementation BPGPlaylist
 
-- (instancetype)initWithSong:(BPGSong *)song
-                       title:(NSString *)title
+- (instancetype)initWithName:(NSString *)name
+                       songs:(NSArray *)songs
 {
     self = [super init];
     if (self) {
-        _title = title;
-        _song = song;
+        _name = name;
+        _internalSongs = [songs mutableCopy];
     }
     return self;
 }
+
+#pragma mark - Create/Delete
+
+- (void) addSongsObject:(BPGSong *)song
+{
+    [self.internalSongs addObject:song];
+}
+
+- (void)removeSongsObject:(BPGSong *)song
+{
+    [self.internalSongs removeObject:song];
+}
+
+- (NSArray *)songs { return self.internalSongs; }
+
 
 @end
