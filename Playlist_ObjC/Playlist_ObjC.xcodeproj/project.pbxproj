@@ -12,6 +12,10 @@
 		6BBF8B6E1EF82A7800C0B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF8B6C1EF82A7800C0B737 /* Main.storyboard */; };
 		6BBF8B701EF82A7800C0B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF8B6F1EF82A7800C0B737 /* Assets.xcassets */; };
 		6BBF8B731EF82A7800C0B737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF8B711EF82A7800C0B737 /* LaunchScreen.storyboard */; };
+		6BBF8B851EF82DA500C0B737 /* BPGPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B841EF82DA500C0B737 /* BPGPlaylistTableViewController.m */; };
+		6BBF8B881EF82DCD00C0B737 /* BPGSongsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B871EF82DCD00C0B737 /* BPGSongsTableViewController.m */; };
+		6BBF8B8C1EF8317C00C0B737 /* BPGPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B8B1EF8317C00C0B737 /* BPGPlaylist.m */; };
+		6BBF8B8F1EF8318A00C0B737 /* BPGSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		6BBF8B6F1EF82A7800C0B737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BBF8B721EF82A7800C0B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BBF8B741EF82A7800C0B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBF8B831EF82DA500C0B737 /* BPGPlaylistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGPlaylistTableViewController.h; sourceTree = "<group>"; };
+		6BBF8B841EF82DA500C0B737 /* BPGPlaylistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGPlaylistTableViewController.m; sourceTree = "<group>"; };
+		6BBF8B861EF82DCD00C0B737 /* BPGSongsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGSongsTableViewController.h; sourceTree = "<group>"; };
+		6BBF8B871EF82DCD00C0B737 /* BPGSongsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGSongsTableViewController.m; sourceTree = "<group>"; };
+		6BBF8B8A1EF8317C00C0B737 /* BPGPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGPlaylist.h; sourceTree = "<group>"; };
+		6BBF8B8B1EF8317C00C0B737 /* BPGPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGPlaylist.m; sourceTree = "<group>"; };
+		6BBF8B8D1EF8318A00C0B737 /* BPGSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGSong.h; sourceTree = "<group>"; };
+		6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGSong.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			children = (
 				6BBF8B661EF82A7800C0B737 /* AppDelegate.h */,
 				6BBF8B671EF82A7800C0B737 /* AppDelegate.m */,
+				6BBF8B891EF8314A00C0B737 /* Models */,
 				6BBF8B7B1EF82ABD00C0B737 /* ViewControllers */,
 				6BBF8B7A1EF82AAE00C0B737 /* Resources */,
 				6BBF8B631EF82A7800C0B737 /* Supporting Files */,
@@ -75,6 +88,7 @@
 		6BBF8B7A1EF82AAE00C0B737 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BBF8B7F1EF82D2200C0B737 /* Storyboards */,
 				6BBF8B6F1EF82A7800C0B737 /* Assets.xcassets */,
 				6BBF8B711EF82A7800C0B737 /* LaunchScreen.storyboard */,
 				6BBF8B741EF82A7800C0B737 /* Info.plist */,
@@ -85,9 +99,31 @@
 		6BBF8B7B1EF82ABD00C0B737 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6BBF8B6C1EF82A7800C0B737 /* Main.storyboard */,
+				6BBF8B831EF82DA500C0B737 /* BPGPlaylistTableViewController.h */,
+				6BBF8B841EF82DA500C0B737 /* BPGPlaylistTableViewController.m */,
+				6BBF8B861EF82DCD00C0B737 /* BPGSongsTableViewController.h */,
+				6BBF8B871EF82DCD00C0B737 /* BPGSongsTableViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6BBF8B7F1EF82D2200C0B737 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF8B6C1EF82A7800C0B737 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		6BBF8B891EF8314A00C0B737 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF8B8A1EF8317C00C0B737 /* BPGPlaylist.h */,
+				6BBF8B8B1EF8317C00C0B737 /* BPGPlaylist.m */,
+				6BBF8B8D1EF8318A00C0B737 /* BPGSong.h */,
+				6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BBF8B681EF82A7800C0B737 /* AppDelegate.m in Sources */,
+				6BBF8B851EF82DA500C0B737 /* BPGPlaylistTableViewController.m in Sources */,
+				6BBF8B881EF82DCD00C0B737 /* BPGSongsTableViewController.m in Sources */,
 				6BBF8B651EF82A7800C0B737 /* main.m in Sources */,
+				6BBF8B8F1EF8318A00C0B737 /* BPGSong.m in Sources */,
+				6BBF8B8C1EF8317C00C0B737 /* BPGPlaylist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
