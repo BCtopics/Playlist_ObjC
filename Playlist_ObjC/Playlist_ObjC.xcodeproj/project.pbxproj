@@ -16,6 +16,7 @@
 		6BBF8B881EF82DCD00C0B737 /* BPGSongsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B871EF82DCD00C0B737 /* BPGSongsTableViewController.m */; };
 		6BBF8B8C1EF8317C00C0B737 /* BPGPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B8B1EF8317C00C0B737 /* BPGPlaylist.m */; };
 		6BBF8B8F1EF8318A00C0B737 /* BPGSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */; };
+		6BBF8B931EF83F6D00C0B737 /* BPGPlaylistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF8B921EF83F6D00C0B737 /* BPGPlaylistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		6BBF8B8B1EF8317C00C0B737 /* BPGPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGPlaylist.m; sourceTree = "<group>"; };
 		6BBF8B8D1EF8318A00C0B737 /* BPGSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGSong.h; sourceTree = "<group>"; };
 		6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGSong.m; sourceTree = "<group>"; };
+		6BBF8B911EF83F6D00C0B737 /* BPGPlaylistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGPlaylistController.h; sourceTree = "<group>"; };
+		6BBF8B921EF83F6D00C0B737 /* BPGPlaylistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGPlaylistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			children = (
 				6BBF8B661EF82A7800C0B737 /* AppDelegate.h */,
 				6BBF8B671EF82A7800C0B737 /* AppDelegate.m */,
+				6BBF8B901EF83F5500C0B737 /* ModelControllers */,
 				6BBF8B891EF8314A00C0B737 /* Models */,
 				6BBF8B7B1EF82ABD00C0B737 /* ViewControllers */,
 				6BBF8B7A1EF82AAE00C0B737 /* Resources */,
@@ -124,6 +128,15 @@
 				6BBF8B8E1EF8318A00C0B737 /* BPGSong.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6BBF8B901EF83F5500C0B737 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF8B911EF83F6D00C0B737 /* BPGPlaylistController.h */,
+				6BBF8B921EF83F6D00C0B737 /* BPGPlaylistController.m */,
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +216,7 @@
 				6BBF8B881EF82DCD00C0B737 /* BPGSongsTableViewController.m in Sources */,
 				6BBF8B651EF82A7800C0B737 /* main.m in Sources */,
 				6BBF8B8F1EF8318A00C0B737 /* BPGSong.m in Sources */,
+				6BBF8B931EF83F6D00C0B737 /* BPGPlaylistController.m in Sources */,
 				6BBF8B8C1EF8317C00C0B737 /* BPGPlaylist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
